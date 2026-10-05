@@ -19,10 +19,10 @@ tidy fit for windowed price sequences.
 
 ## Pipeline
 
-1. **Window** — slice the price history into fixed-length look-back sequences → next-step target.
-2. **Scale** — `MinMax` normalise so the network trains on a stable range; keep the scaler to invert predictions.
-3. **Model** — stacked `GRU` layers with dropout and a dense output, trained on mean-squared error.
-4. **Evaluate** — plot predicted vs. actual on a held-out tail of the series.
+1. **Window**: slice the price history into fixed-length look-back sequences → next-step target.
+2. **Scale**: `MinMax` normalise so the network trains on a stable range; keep the scaler to invert predictions.
+3. **Model**: stacked `GRU` layers with dropout and a dense output, trained on mean-squared error.
+4. **Evaluate**: plot predicted vs. actual on a held-out tail of the series.
 
 ## Run it
 
